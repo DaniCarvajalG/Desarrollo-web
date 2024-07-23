@@ -1,0 +1,21 @@
+#Principal-IMG{
+    float: left;
+    margin-right: 30px;
+    margin-left: 10px;
+    border: black solid 3px;
+}   
+
+.title,
+.intro-parraf{
+    margin-right: 20px;
+}
+.resume{
+    list-style-type: disc;
+}
+
+.resume-elem,
+.final-parraf{
+    padding: 5px;
+    margin-right: 20px;
+    margin-left: 10px;
+ }

@@ -1,0 +1,128 @@
+.navbar{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position:relative;
+    background-color: #64babe;
+    box-sizing: border-box; 
+    z-index: 900;
+    top: -19px;
+    left: 0;
+    width: 100%;
+    margin-top: 0px;
+}
+
+.nav-menu{
+    display: flex;
+    flex-direction: row;
+    margin: 15px 5px;
+}
+
+.nav-elem{
+    list-style: none;
+    margin: 0 8px;
+    padding: 0;
+    transition: 0.5s;
+}
+
+.nav-elem a{
+    color: #ecebea;
+    text-decoration: none;
+}
+.nav-elem:hover{
+    transform: translateY(-5px);
+}
+
+.nav-elem a:hover {
+    background-color: #085979; 
+    color: #ecebea; 
+}
+
+#work > #sistemas , #work > #matematica{
+    border: 2px solid #007298; 
+    border-radius: 8px; 
+    background: linear-gradient(to right, #55d3d7, #6ef4f9); 
+    padding: 20px; 
+    margin: 20px 20px;
+}
+
+#box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.timeline{
+    width: 700px;
+    border-bottom: 20px solid #55d3d7; 
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.timeline h5{
+    color: black;
+    background: #55d3d7;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.timeline ul{
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline ul li{
+    list-style: none;
+    width: 100%;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, .1);
+    transition: transform .5s;
+    margin-bottom: 10px;
+}
+
+.timeline ul li:hover{
+    transform: scale(1.1);
+    z-index: 100;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, .2);   
+    color: #fff;   
+}
+
+.timeline ul li span{
+    width: 45px;
+    height: 66px;
+    text-align: center;
+    line-height: 20px;
+    background: #55d3d7;
+    display: inline-block;
+    color: white;
+}
+.timeline ul li a , .timeline ul li p{
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    justify-content: center;
+}
+
+#education,
+#awards{
+    border: 2px solid #007298; 
+    border-radius: 8px; 
+    background: linear-gradient(to right, #ffffff, #eff0f0); 
+    padding: 20px; 
+    margin: 20px 20px;
+}
+
+.icon{
+    list-style: none;
+    margin: 5px 5px;
+    padding: 0;
+    transition: 0.5s;
+    color: white;
+    font-size: 28px;
+
+}
