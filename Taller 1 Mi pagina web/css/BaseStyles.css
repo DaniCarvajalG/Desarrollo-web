@@ -45,38 +45,81 @@ body, html {
     color: #ecebea; 
 }
 
-.footer{
+.footer {
     display: flex;
-    position:relative;
+    position: relative;
     background-color: #64babe;
     box-sizing: border-box;
-    font-family: 'Raleway', sans-serif;   
+    font-family: 'Raleway', sans-serif;
     width: 100%;
     flex-direction: column;
 }
 
-.contact-menu{
+.contact-menu {
     display: flex;
     flex-direction: row;
     margin: 10px 10px;
     justify-content: center;
     align-items: center;
 }
-.icon-elem{
+
+.icon-elem {
     list-style: none;
     margin: 0 8px;
     padding: 0;
     transition: 0.5s;
     color: #ecebea;
     font-size: 32px;
+    position: relative; /* Keep this line */
+    cursor: pointer; /* Keep this line */
 }
-.icon-elem a{
+
+.icon-elem a {
     color: #ecebea;
     text-decoration: none;
 }
-.icon-elem:hover{
+
+.icon-elem:hover {
     transform: translateY(-5px);
 }
+
+/* Tooltip container */
+.icon-elem .tooltiptext {
+    visibility: hidden;
+    background-color: #085979;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 2px 5px; 
+    position: absolute;
+    z-index: 1;
+    top: 150%;
+    left: 50%;
+    transform: translateX(-50%); 
+    opacity: 0;
+    font-size: 12px;
+    white-space: nowrap; 
+    transition: opacity 0.3s;
+}
+
+.icon-elem .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #085979 transparent;
+    margin-top: -10px;
+}
+
+.icon-elem:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+
 .copyright{
     display:  flex;
     justify-content: center;
