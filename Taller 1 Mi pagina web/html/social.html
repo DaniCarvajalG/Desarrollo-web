@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="../css/BaseStyles.css"/>
     <link rel="stylesheet" href="../css/SocialStyles.css"/>
+    <script src="../javaScript/script.js" defer></script>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,8 +33,45 @@
             </li>  
         </ul>
     </header>
+
     <main class="main">
+        <form class="form" id="form">
+            <fieldset class="fieldset">
+                <legend class="legend">Registro de amigos </legend>
         
+                <label class="label" for="Un"> Username </label>
+                <input class="input" type="text" name="Username" id="Un" required>
+        
+                <label class="label" for="Nm"> Nombre </label>
+                <input class="input" type="text" name="Nombre" id="Nm" required>
+        
+                <label class="label" for="Img"> Imagen </label>
+                <input class="input" type="text" name="Imagen" id="Img" required>
+        
+                <label class="label" for="Pet"> Mascota </label>
+                <input class="input" type="text" name="Mascota" id="Pet" required>
+        
+                <button type="submit"> Enviar </button>
+            </fieldset>
+        </form>
+        
+        <table id="amigosTable" class="principal-table">
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Nombre</th>
+                    <th>Imagen</th>
+                    <th>Mascotas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Las filas se añadirán aquí -->
+            </tbody>
+        </table>
+        
+        <ul id="mascotasList">
+            <!-- Las mascotas se mostrarán aquí -->
+        </ul>
     </main>
     <footer class="footer">
         <ul class="contact-menu">
