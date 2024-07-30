@@ -1,98 +1,110 @@
-/* Formulario */
+/* Estilos para el formulario */
 form {
-    margin: 10px auto;
-    width: 500px;
-    padding: 20px;
-    border: 2px solid #085979;
-    border-radius: 5px;
-    background-color: #ffffff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin: 10px auto; /* Centramos el formulario verticalmente con margen automático */
+    width: 500px; /* Ancho fijo del formulario */
+    padding: 20px; /* Espaciado interno del formulario */
+    border: 2px solid #085979; /* Borde del formulario */
+    border-radius: 5px; /* Bordes redondeados del formulario */
+    background-color: #ffffff; /* Color de fondo blanco */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra del formulario */
+    display: flex; /* Flexbox para el contenido interno */
+    flex-direction: column; /* Columnas en lugar de filas */
+    align-items: center; /* Alineamos el contenido al centro */
 }
 
+/* Estilos para los elementos de entrada, etiqueta y select dentro del formulario */
 input, label, select {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
+    display: block; /* Mostrar cada elemento en una nueva línea */
+    width: 100%; /* Ancho completo dentro del formulario */
+    margin-bottom: 10px; /* Espacio inferior */
 }
 
+/* Estilos para las etiquetas del formulario */
 label {
-    font-weight: bold;
+    font-weight: bold; /* Negrita para las etiquetas */
 }
 
+/* Estilos para la leyenda del formulario */
 .legend {
-    display: block;
-    text-align: center;
-    font-size: 1.5em;
-    color: #085979;
-    margin-bottom: 20px;
+    display: block; /* Mostrar como un bloque */
+    text-align: center; /* Alinear el texto al centro */
+    font-size: 1.5em; /* Tamaño de fuente mayor */
+    color: #085979; /* Color del texto */
+    margin-bottom: 20px; /* Espacio inferior */
 }
 
-/* Tabla principal */
+/* Estilos para la tabla principal */
 .principal-table {
-    border-collapse: collapse;
-    margin: 25px auto;
-    font-size: 1.2em;
-    min-width: 400px;
-    border-radius: 5px 5px 0 0;
-    overflow: hidden;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border-collapse: collapse; /* Colapsar bordes de la tabla */
+    margin: 25px auto; /* Centramos la tabla con margen automático */
+    font-size: 1.2em; /* Tamaño de fuente */
+    min-width: 400px; /* Ancho mínimo de la tabla */
+    border-radius: 5px 5px 0 0; /* Bordes redondeados en la parte superior */
+    overflow: hidden; /* Ocultar desbordamiento */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); /* Sombra de la tabla */
 }
 
+/* Estilos para las filas del encabezado de la tabla */
 .principal-table thead tr {
-    background-color: #085979;
-    color: white;
-    font-weight: 700;
-    text-align: center;
+    background-color: #085979; /* Fondo del encabezado */
+    color: white; /* Color del texto del encabezado */
+    font-weight: 700; /* Negrita */
+    text-align: center; /* Alinear el texto al centro */
 }
 
+/* Estilos para las celdas del encabezado y del cuerpo de la tabla */
 .principal-table th,
 .principal-table td {
-    padding: 12px 15px;
+    padding: 12px 15px; /* Espaciado interno de las celdas */
 }
 
+/* Estilos para las filas del cuerpo de la tabla */
 .principal-table tbody tr {
-    border-bottom: 2px solid #dddddd;
-    text-align: center;
+    border-bottom: 2px solid #dddddd; /* Borde inferior de las filas */
+    text-align: center; /* Alinear el texto al centro */
 }
 
+/* Estilos para las filas pares del cuerpo de la tabla */
 .principal-table tbody tr:nth-of-type(even) {
-    background-color: #F0F0F0;
+    background-color: #F0F0F0; /* Fondo para las filas pares */
 }
 
+/* Estilos para las filas impares del cuerpo de la tabla */
 .principal-table tbody tr:nth-of-type(odd) {
-    background-color: #dddddd;
+    background-color: #dddddd; /* Fondo para las filas impares */
 }
 
+/* Estilos para la última fila del cuerpo de la tabla */
 .principal-table tbody tr:last-of-type {
-    border-bottom: 2px solid #085979;
+    border-bottom: 2px solid #085979; /* Borde inferior de la última fila */
 }
 
-/* Lista de mascotas */
+/* Estilos para la lista de mascotas */
 #mascotasList {
-    text-align: center;
-    margin-top: 20px;
-    padding: 0;
+    text-align: center; /* Alinear el texto al centro */
+    margin-top: 20px; /* Margen superior */
+    padding: 0; /* Sin padding */
 }
 
+/* Estilos para el título de la lista de mascotas */
 #mascotasList h4 {
-    font-size: 1.2em;
-    color: #085979;
-    margin-bottom: 10px;
-    text-align: center;
+    font-size: 1.2em; /* Tamaño de fuente del título */
+    color: #085979; /* Color del texto */
+    margin-bottom: 10px; /* Margen inferior */
+    text-align: center; /* Alinear el texto al centro */
 }
 
+/* Estilos para la lista de elementos */
 #mascotasList ul {
-    list-style: disc;
-    padding-left: 20px;
-    text-align: left;
-    display: inline-block;
+    list-style: disc; /* Estilo de lista con viñetas */
+    padding-left: 20px; /* Padding a la izquierda */
+    text-align: left; /* Alinear el texto a la izquierda */
+    display: inline-block; /* Mostrar como un bloque en línea */
 }
 
+/* Estilos para los elementos de la lista de mascotas */
 #mascotasList li {
-    font-size: 1em;
-    color: #333;
-    margin: 5px 0;
+    font-size: 1em; /* Tamaño de fuente */
+    color: #333; /* Color del texto */
+    margin: 5px 0; /* Márgenes superior e inferior */
 }

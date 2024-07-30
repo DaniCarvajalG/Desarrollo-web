@@ -1,21 +1,26 @@
-#Principal-IMG{
-    float: left;
-    margin-right: 30px;
-    margin-left: 10px;
-    border: black solid 3px;
-}   
+/* Estilos para la imagen principal */
+#Principal-IMG {
+    float: left; /* Hace que la imagen flote a la izquierda */
+    margin-right: 30px; /* Margen a la derecha */
+    margin-left: 10px; /* Margen a la izquierda */
+    border: black solid 3px; /* Borde negro sólido */
+}
 
+/* Estilos para los elementos con la clase title e intro-parraf */
 .title,
-.intro-parraf{
-    margin-right: 20px;
-}
-.resume{
-    list-style-type: disc;
+.intro-parraf {
+    margin-right: 20px; /* Margen a la derecha */
 }
 
+/* Estilos para la lista con la clase resume */
+.resume {
+    list-style-type: disc; /* Estilo de lista con viñetas */
+}
+
+/* Estilos para los elementos con las clases resume-elem y final-parraf */
 .resume-elem,
-.final-parraf{
-    padding: 5px;
-    margin-right: 20px;
-    margin-left: 10px;
- }
+.final-parraf {
+    padding: 5px; /* Espaciado interno */
+    margin-right: 20px; /* Margen a la derecha */
+    margin-left: 10px; /* Margen a la izquierda */
+}

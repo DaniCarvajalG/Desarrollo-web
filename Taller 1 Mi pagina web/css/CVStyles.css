@@ -1,128 +1,148 @@
-.navbar{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    position:relative;
-    background-color: #64babe;
-    box-sizing: border-box; 
-    z-index: 900;
-    top: -19px;
-    left: 0;
-    width: 100%;
-    margin-top: 0px;
+/* Estilos para la barra de navegación */
+.navbar {
+    display: flex; /* Usa flexbox para el diseño */
+    justify-content: flex-start; /* Alinea los elementos al inicio en el eje principal */
+    align-items: flex-start; /* Alinea los elementos al inicio en el eje transversal */
+    position: relative; /* Posición relativa */
+    background-color: #64babe; /* Color de fondo */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho y alto */
+    z-index: 900; /* Nivel de apilamiento */
+    top: -19px; /* Posiciona la barra hacia arriba */
+    left: 0; /* Posiciona la barra a la izquierda */
+    width: 100%; /* Ancho completo */
+    margin-top: 0px; /* Margen superior */
 }
 
-.nav-menu{
-    display: flex;
-    flex-direction: row;
-    margin: 15px 5px;
+/* Estilos para el menú de navegación */
+.nav-menu {
+    display: flex; /* Usa flexbox para el diseño */
+    flex-direction: row; /* Dirección de los elementos en fila */
+    margin: 15px 5px; /* Margen alrededor del menú */
 }
 
-.nav-elem{
-    list-style: none;
-    margin: 0 8px;
-    padding: 0;
-    transition: 0.5s;
+/* Estilos para los elementos del menú de navegación */
+.nav-elem {
+    list-style: none; /* Elimina las viñetas de la lista */
+    margin: 0 8px; /* Margen alrededor de los elementos */
+    padding: 0; /* Sin padding */
+    transition: 0.5s; /* Transición suave */
 }
 
-.nav-elem a{
-    color: #ecebea;
-    text-decoration: none;
-}
-.nav-elem:hover{
-    transform: translateY(-5px);
+/* Estilos para los enlaces dentro de los elementos del menú */
+.nav-elem a {
+    color: #ecebea; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
 }
 
+/* Efecto hover para los elementos del menú */
+.nav-elem:hover {
+    transform: translateY(-5px); /* Eleva el elemento */
+}
+
+/* Efecto hover para los enlaces dentro de los elementos del menú */
 .nav-elem a:hover {
-    background-color: #085979; 
-    color: #ecebea; 
+    background-color: #085979; /* Color de fondo al pasar el ratón */
+    color: #ecebea; /* Color del texto al pasar el ratón */
 }
 
-#work > #sistemas , #work > #matematica{
-    border: 2px solid #007298; 
-    border-radius: 8px; 
-    background: linear-gradient(to right, #55d3d7, #6ef4f9); 
-    padding: 20px; 
-    margin: 20px 20px;
+/* Estilos para los elementos de trabajo */
+#work > #sistemas,
+#work > #matematica {
+    border: 2px solid #007298; /* Borde sólido */
+    border-radius: 8px; /* Bordes redondeados */
+    background: linear-gradient(to right, #55d3d7, #6ef4f9); /* Fondo degradado */
+    padding: 20px; /* Espaciado interno */
+    margin: 20px 20px; /* Margen alrededor */
 }
 
+/* Estilos para el contenedor box */
 #box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+    display: flex; /* Usa flexbox para el diseño */
+    align-items: center; /* Alinea los elementos al centro en el eje transversal */
+    justify-content: center; /* Alinea los elementos al centro en el eje principal */
 }
 
-.timeline{
-    width: 700px;
-    border-bottom: 20px solid #55d3d7; 
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-.timeline h5{
-    color: black;
-    background: #55d3d7;
-    padding: 10px 20px;
-    font-size: 20px;
-    font-weight: 700;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    text-align: center;
-    margin-bottom: 20px;
+/* Estilos para la línea de tiempo */
+.timeline {
+    width: 700px; /* Ancho de la línea de tiempo */
+    border-bottom: 20px solid #55d3d7; /* Borde inferior */
+    border-bottom-left-radius: 10px; /* Borde inferior izquierdo redondeado */
+    border-bottom-right-radius: 10px; /* Borde inferior derecho redondeado */
 }
 
-.timeline ul{
-    position: relative;
-    padding: 0;
-    margin: 0;
+/* Estilos para los encabezados dentro de la línea de tiempo */
+.timeline h5 {
+    color: black; /* Color del texto */
+    background: #55d3d7; /* Fondo del encabezado */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 20px; /* Tamaño de fuente */
+    font-weight: 700; /* Peso de la fuente */
+    border-top-left-radius: 10px; /* Borde superior izquierdo redondeado */
+    border-top-right-radius: 10px; /* Borde superior derecho redondeado */
+    text-align: center; /* Alinear el texto al centro */
+    margin-bottom: 20px; /* Margen inferior */
 }
 
-.timeline ul li{
-    list-style: none;
-    width: 100%;
-    box-shadow: 0 5px 25px rgba(0, 0, 0, .1);
-    transition: transform .5s;
-    margin-bottom: 10px;
+/* Estilos para la lista dentro de la línea de tiempo */
+.timeline ul {
+    position: relative; /* Posición relativa */
+    padding: 0; /* Sin padding */
+    margin: 0; /* Sin margen */
 }
 
-.timeline ul li:hover{
-    transform: scale(1.1);
-    z-index: 100;
-    box-shadow: 0 5px 25px rgba(0, 0, 0, .2);   
-    color: #fff;   
+/* Estilos para los elementos de la lista dentro de la línea de tiempo */
+.timeline ul li {
+    list-style: none; /* Sin estilo de lista */
+    width: 100%; /* Ancho completo */
+    box-shadow: 0 5px 25px rgba(0, 0, 0, .1); /* Sombra del elemento */
+    transition: transform .5s; /* Transición suave */
+    margin-bottom: 10px; /* Margen inferior */
 }
 
-.timeline ul li span{
-    width: 45px;
-    height: 66px;
-    text-align: center;
-    line-height: 20px;
-    background: #55d3d7;
-    display: inline-block;
-    color: white;
-}
-.timeline ul li a , .timeline ul li p{
-    text-decoration: none;
-    text-align: center;
-    color: black;
-    justify-content: center;
+/* Efecto hover para los elementos de la lista dentro de la línea de tiempo */
+.timeline ul li:hover {
+    transform: scale(1.1); /* Escala el elemento */
+    z-index: 100; /* Nivel de apilamiento */
+    box-shadow: 0 5px 25px rgba(0, 0, 0, .2); /* Sombra del elemento */
+    color: #fff; /* Color del texto */
 }
 
+/* Estilos para los spans dentro de los elementos de la lista de la línea de tiempo */
+.timeline ul li span {
+    width: 45px; /* Ancho del span */
+    height: 66px; /* Altura del span */
+    text-align: center; /* Alinear el texto al centro */
+    line-height: 20px; /* Altura de la línea */
+    background: #55d3d7; /* Fondo del span */
+    display: inline-block; /* Bloque en línea */
+    color: white; /* Color del texto */
+}
+
+/* Estilos para los enlaces y párrafos dentro de los elementos de la lista de la línea de tiempo */
+.timeline ul li a,
+.timeline ul li p {
+    text-decoration: none; /* Sin subrayado */
+    text-align: center; /* Alinear el texto al centro */
+    color: black; /* Color del texto */
+    justify-content: center; /* Centrar el contenido */
+}
+
+/* Estilos para las secciones de educación y premios */
 #education,
-#awards{
-    border: 2px solid #007298; 
-    border-radius: 8px; 
-    background: linear-gradient(to right, #ffffff, #eff0f0); 
-    padding: 20px; 
-    margin: 20px 20px;
+#awards {
+    border: 2px solid #007298; /* Borde sólido */
+    border-radius: 8px; /* Bordes redondeados */
+    background: linear-gradient(to right, #ffffff, #eff0f0); /* Fondo degradado */
+    padding: 20px; /* Espaciado interno */
+    margin: 20px 20px; /* Margen alrededor */
 }
 
-.icon{
-    list-style: none;
-    margin: 5px 5px;
-    padding: 0;
-    transition: 0.5s;
-    color: white;
-    font-size: 28px;
-
+/* Estilos para los iconos */
+.icon {
+    list-style: none; /* Sin estilo de lista */
+    margin: 5px 5px; /* Margen alrededor */
+    padding: 0; /* Sin padding */
+    transition: 0.5s; /* Transición suave */
+    color: white; /* Color del texto */
+    font-size: 28px; /* Tamaño de fuente */
 }

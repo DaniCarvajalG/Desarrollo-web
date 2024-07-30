@@ -1,142 +1,161 @@
+/* Estilos para el body y html */
 body, html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    background-color: white;
-}
-.header{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    position: fixed;
-    background-color: #64babe;
-    box-sizing: border-box;
-    z-index: 1000;
-    top: 0;
-    left: 0;
-    width: 100%;
-    margin-top: 0px;
+    margin: 0; /* Elimina el margen por defecto */
+    padding: 0; /* Elimina el padding por defecto */
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Alto completo */
+    background-color: white; /* Fondo blanco */
 }
 
-.index-menu{
-    display: flex;
-    flex-direction: row;
-    margin: 15px 5px;
+/* Estilos para el encabezado */
+.header {
+    display: flex; /* Usa flexbox para el diseño */
+    justify-content: flex-start; /* Alinea los elementos al inicio en el eje principal */
+    align-items: flex-start; /* Alinea los elementos al inicio en el eje transversal */
+    position: fixed; /* Fija el encabezado en la parte superior */
+    background-color: #64babe; /* Color de fondo */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho y alto */
+    z-index: 1000; /* Coloca el encabezado en el frente */
+    top: 0; /* Alinea al borde superior */
+    left: 0; /* Alinea al borde izquierdo */
+    width: 100%; /* Ancho completo */
+    margin-top: 0px; /* Sin margen superior */
 }
 
-.menu-elem{
-    list-style: none;
-    margin: 0 8px;
-    padding: 0;
-    transition: 0.5s;
+/* Estilos para el menú del índice */
+.index-menu {
+    display: flex; /* Usa flexbox para el diseño */
+    flex-direction: row; /* Elementos en una fila */
+    margin: 15px 5px; /* Margen alrededor del menú */
 }
 
-.menu-elem a{
-    color: #ecebea;
-    text-decoration: none;
-}
-.menu-elem:hover{
-    transform: translateY(-5px);
+/* Estilos para los elementos del menú */
+.menu-elem {
+    list-style: none; /* Sin viñetas */
+    margin: 0 8px; /* Margen horizontal */
+    padding: 0; /* Sin padding */
+    transition: 0.5s; /* Transición suave para transformaciones */
 }
 
+/* Estilos para los enlaces del menú */
+.menu-elem a {
+    color: #ecebea; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+}
+
+/* Efecto hover para los elementos del menú */
+.menu-elem:hover {
+    transform: translateY(-5px); /* Desplaza hacia arriba */
+}
+
+/* Efecto hover para los enlaces del menú */
 .menu-elem a:hover {
-    background-color: #085979; 
-    color: #ecebea; 
+    background-color: #085979; /* Fondo al pasar el ratón */
+    color: #ecebea; /* Color del texto */
 }
 
+/* Estilos para el pie de página */
 .footer {
-    display: flex;
-    position: relative;
-    background-color: #64babe;
-    box-sizing: border-box;
-    font-family: 'Raleway', sans-serif;
-    width: 100%;
-    flex-direction: column;
+    display: flex; /* Usa flexbox para el diseño */
+    position: relative; /* Posición relativa */
+    background-color: #64babe; /* Color de fondo */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho y alto */
+    font-family: 'Raleway', sans-serif; /* Fuente */
+    width: 100%; /* Ancho completo */
+    flex-direction: column; /* Elementos en una columna */
 }
 
+/* Estilos para el menú de contacto */
 .contact-menu {
-    display: flex;
-    flex-direction: row;
-    margin: 10px 10px;
-    justify-content: center;
-    align-items: center;
+    display: flex; /* Usa flexbox para el diseño */
+    flex-direction: row; /* Elementos en una fila */
+    margin: 10px 10px; /* Margen alrededor del menú */
+    justify-content: center; /* Alinea los elementos al centro */
+    align-items: center; /* Alinea los elementos al centro en el eje transversal */
 }
 
+/* Estilos para los iconos del menú de contacto */
 .icon-elem {
-    list-style: none;
-    margin: 0 8px;
-    padding: 0;
-    transition: 0.5s;
-    color: #ecebea;
-    font-size: 32px;
-    position: relative; /* Keep this line */
-    cursor: pointer; /* Keep this line */
+    list-style: none; /* Sin viñetas */
+    margin: 0 8px; /* Margen horizontal */
+    padding: 0; /* Sin padding */
+    transition: 0.5s; /* Transición suave para transformaciones */
+    color: #ecebea; /* Color del texto */
+    font-size: 32px; /* Tamaño de la fuente */
+    position: relative; /* Posición relativa */
+    cursor: pointer; /* Cursor en forma de mano */
 }
 
+/* Estilos para los enlaces de los iconos */
 .icon-elem a {
-    color: #ecebea;
-    text-decoration: none;
+    color: #ecebea; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
 }
 
+/* Efecto hover para los iconos del menú de contacto */
 .icon-elem:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px); /* Desplaza hacia arriba */
 }
 
-/* Tooltip container */
+/* Contenedor del tooltip */
 .icon-elem .tooltiptext {
-    visibility: hidden;
-    background-color: #085979;
-    color: #fff;
-    text-align: center;
-    border-radius: 5px;
-    padding: 2px 5px; 
-    position: absolute;
-    z-index: 1;
-    top: 150%;
-    left: 50%;
-    transform: translateX(-50%); 
-    opacity: 0;
-    font-size: 12px;
-    white-space: nowrap; 
-    transition: opacity 0.3s;
+    visibility: hidden; /* Oculta el tooltip por defecto */
+    background-color: #085979; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    text-align: center; /* Alinear el texto al centro */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 2px 5px; /* Espaciado interno */
+    position: absolute; /* Posición absoluta */
+    z-index: 1; /* Coloca el tooltip por encima */
+    top: 150%; /* Desplaza hacia abajo del icono */
+    left: 50%; /* Centra horizontalmente */
+    transform: translateX(-50%); /* Ajusta la posición horizontal */
+    opacity: 0; /* Inicialmente invisible */
+    font-size: 12px; /* Tamaño de fuente */
+    white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
+    transition: opacity 0.3s; /* Transición suave para la opacidad */
 }
 
+/* Flecha del tooltip */
 .icon-elem .tooltiptext::after {
-    content: "";
-    position: absolute;
-    top: 0; 
-    left: 50%;
-    transform: translateX(-50%);
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent transparent #085979 transparent;
-    margin-top: -10px;
+    content: ""; /* Contenido vacío para la flecha */
+    position: absolute; /* Posición absoluta */
+    top: 0; /* Posición en la parte superior del tooltip */
+    left: 50%; /* Centra horizontalmente */
+    transform: translateX(-50%); /* Ajusta la posición horizontal */
+    border-width: 5px; /* Tamaño de la flecha */
+    border-style: solid; /* Estilo sólido */
+    border-color: transparent transparent #085979 transparent; /* Color de la flecha */
+    margin-top: -10px; /* Ajusta la posición vertical */
 }
 
+/* Efecto hover para mostrar el tooltip */
 .icon-elem:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
+    visibility: visible; /* Muestra el tooltip */
+    opacity: 1; /* Totalmente visible */
 }
 
-
-.copyright{
-    display:  flex;
-    justify-content: center;
-    align-items: center;
-    color: #ecebea;
+/* Estilos para el copyright */
+.copyright {
+    display: flex; /* Usa flexbox para el diseño */
+    justify-content: center; /* Alinea los elementos al centro */
+    align-items: center; /* Alinea los elementos al centro en el eje transversal */
+    color: #ecebea; /* Color del texto */
 }
 
-.main{
-    margin-top: 60px;
-    background-color: white; 
+/* Estilos para el contenido principal */
+.main {
+    margin-top: 60px; /* Margen superior */
+    background-color: white; /* Fondo blanco */
 }
 
-h1, h2,h3,h4{
-    text-decoration: underline;
-    text-decoration-color: #64BABE;
+/* Estilos para los encabezados */
+h1, h2, h3, h4 {
+    text-decoration: underline; /* Subrayado */
+    text-decoration-color: #64BABE; /* Color del subrayado */
 }
 
-*{
-    font-family: 'Raleway', sans-serif;
+/* Estilos generales */
+* {
+    font-family: 'Raleway', sans-serif; /* Fuente */
 }
